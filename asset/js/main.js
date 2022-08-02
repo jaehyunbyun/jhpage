@@ -204,4 +204,6 @@ $(function(){
         //     // $('html').scrollTop(0);
         //     window.scrollTo({top:menuLogo, behavior:'smooth'});
         // })
+
+        $(window).trigger('resize')
     });//end

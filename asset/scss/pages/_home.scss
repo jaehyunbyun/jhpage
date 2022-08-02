@@ -180,147 +180,299 @@
 }
 
 //sc-work
-.sc-work{
+.innerWork{
     position: relative;
-    height: 100vh;
-    // background: #333;
-    .work-area{
-        height: 100%;
-    }
-    .sc-title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 100vh;
-        font-weight: 300;
-        font-size: 20vw;
-    }
-
-    
-    .work-list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // align-items: center;
-        justify-content: space-between;
-        // background: #00f;
-    }
-    .work-item{
-        // padding-bottom: 100px;
-        // box-sizing: border-box;
-        &.work-item{
-            padding-top: 20vh;
-            // padding-top: 100px;
-        }
-        &.andar{
-            padding-left: 64vw;
-        }
-        &.naverCareer{
-            padding-left: 20vw;
-        }
-        &.primeX{
-            padding-left: 58vw;
-        }
-        &.naverShop{
-            // padding-left: 30vw;
-        }
-        &.kakaoMo{
-            padding-left: 50vw;
-        }
-    }
-    
-    // .work-wrap{
-    //     position: relative;
-    //     max-width: 1920px;
-    //     margin: 0 auto;
-    //     background: #f00;
-    // }
-    .link-work{
-        display: block;
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    .sc-work{
         position: relative;
-        width: 25vw;
-        height: 30vh;
-        padding-bottom: 40%;
-        overflow: hidden;
-        transition: 0.3s;
-        &:hover{
-            img{
-                transform: scale(1.1);
+        height: 100vh;
+        background: #fff;
+        
+        .work-area{
+            height: 100%;
+        }
+        .sc-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 100vh;
+            font-weight: 300;
+            font-size: 20vw;
+        }
+    
+        
+        .work-list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            // align-items: center;
+            justify-content: space-between;
+            // background: #00f;
+        }
+        .work-item{
+            // padding-bottom: 100px;
+            // box-sizing: border-box;
+            &.work-item{
+                padding-top: 20vh;
+                // padding-top: 100px;
+            }
+            &.andar{
+                padding-left: 64vw;
+            }
+            &.naverCareer{
+                padding-left: 20vw;
+            }
+            &.primeX{
+                padding-left: 58vw;
+            }
+            &.naverShop{
+                // padding-left: 30vw;
+            }
+            &.kakaoMo{
+                padding-left: 50vw;
+            }
+        }
+        
+        // .work-wrap{
+        //     position: relative;
+        //     max-width: 1920px;
+        //     margin: 0 auto;
+        //     background: #f00;
+        // }
+        .link-work{
+            display: block;
+            position: relative;
+            width: 25vw;
+            height: 30vh;
+            padding-bottom: 40%;
+            overflow: hidden;
+            transition: 0.3s;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+                &::after{
+                    background: none;
+                }
             }
             &::after{
-                background: none;
+                content: '';
+                position: absolute;
+                top: 0;left: 0;bottom: 0;right: 0;
+                background: rgba(0, 0, 0, 0.25);
+                transition: 0.3s;
+                // border: 1px solid #000;
             }
+            img{
+                position: absolute;
+                top: 0;bottom: 0;left: 0; right: 0;
+                width: 100%; height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                transition: 0.3s ease-in-out;
+            }
+            .img-naverShop{object-position: 47% 50%;}
         }
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;left: 0;bottom: 0;right: 0;
-            background: rgba(0, 0, 0, 0.25);
-            transition: 0.3s;
-            // border: 1px solid #000;
-        }
-        img{
-            position: absolute;
-            top: 0;bottom: 0;left: 0; right: 0;
-            width: 100%; height: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-            transition: 0.3s ease-in-out;
-        }
-        .img-naverShop{object-position: 47% 50%;}
-    }
-
-    .txt-box{
-        padding-top: 20px;
-        font-size: 15px;
-        // position: absolute;
-        // bottom: 80px;left: 20px;
-        color: #000;
-        .title{
-            font-size: 30px;
-
-            font-weight: 600;
-        }
-        .category{
-            display: inline-block;
-            margin-left: 10px;
-            font-style: normal;
-            font-weight: 600;
-        }
-    }
-
-    .btn-box{
-        // position: absolute;
-        // bottom: 12px;left: 15px;
-        padding-top: 15px;
-        font-size: 20px;
-        display: flex;
-        color: #000;
-        text-align: center;
-        line-height: 43px;
-        
-        .btn-link{
-            display: block;
-            width: 150px;height: 43px;
-            font-weight: 600;
-            border: 1px solid #000;
-            border-radius: 100px;
-            background: #fff;
-            transition: .5s;
-            &+.btn-link{
+    
+        .txt-box{
+            padding-top: 20px;
+            font-size: 15px;
+            // position: absolute;
+            // bottom: 80px;left: 20px;
+            color: #000;
+            .title{
+                font-size: 30px;
+    
+                font-weight: 600;
+            }
+            .category{
+                display: inline-block;
                 margin-left: 10px;
-            }
-            &:hover{
-                color: #fff;
-                background: #000;
+                font-style: normal;
+                font-weight: 600;
             }
         }
-        .link-site{
-            width: 100px;
+    
+        .btn-box{
+            // position: absolute;
+            // bottom: 12px;left: 15px;
+            padding-top: 15px;
+            font-size: 20px;
+            display: flex;
+            color: #000;
+            text-align: center;
+            line-height: 43px;
+            
+            .btn-link{
+                display: block;
+                width: 150px;height: 43px;
+                font-weight: 600;
+                border: 1px solid #000;
+                border-radius: 100px;
+                background: #fff;
+                transition: .5s;
+                &+.btn-link{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    color: #fff;
+                    background: #000;
+                }
+            }
+            .link-site{
+                width: 100px;
+            }
         }
+    
     }
-
 }
+// .sc-work{
+//     position: relative;
+//     height: 100vh;
+//     background: #fff;
+    
+//     .work-area{
+//         height: 100%;
+//     }
+//     .sc-title{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         line-height: 100vh;
+//         font-weight: 300;
+//         font-size: 20vw;
+//     }
+
+    
+//     .work-list{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         // align-items: center;
+//         justify-content: space-between;
+//         // background: #00f;
+//     }
+//     .work-item{
+//         // padding-bottom: 100px;
+//         // box-sizing: border-box;
+//         &.work-item{
+//             padding-top: 20vh;
+//             // padding-top: 100px;
+//         }
+//         &.andar{
+//             padding-left: 64vw;
+//         }
+//         &.naverCareer{
+//             padding-left: 20vw;
+//         }
+//         &.primeX{
+//             padding-left: 58vw;
+//         }
+//         &.naverShop{
+//             // padding-left: 30vw;
+//         }
+//         &.kakaoMo{
+//             padding-left: 50vw;
+//         }
+//     }
+    
+//     // .work-wrap{
+//     //     position: relative;
+//     //     max-width: 1920px;
+//     //     margin: 0 auto;
+//     //     background: #f00;
+//     // }
+//     .link-work{
+//         display: block;
+//         position: relative;
+//         width: 25vw;
+//         height: 30vh;
+//         padding-bottom: 40%;
+//         overflow: hidden;
+//         transition: 0.3s;
+//         &:hover{
+//             img{
+//                 transform: scale(1.1);
+//             }
+//             &::after{
+//                 background: none;
+//             }
+//         }
+//         &::after{
+//             content: '';
+//             position: absolute;
+//             top: 0;left: 0;bottom: 0;right: 0;
+//             background: rgba(0, 0, 0, 0.25);
+//             transition: 0.3s;
+//             // border: 1px solid #000;
+//         }
+//         img{
+//             position: absolute;
+//             top: 0;bottom: 0;left: 0; right: 0;
+//             width: 100%; height: 100%;
+//             object-fit: cover;
+//             object-position: 50% 50%;
+//             transition: 0.3s ease-in-out;
+//         }
+//         .img-naverShop{object-position: 47% 50%;}
+//     }
+
+//     .txt-box{
+//         padding-top: 20px;
+//         font-size: 15px;
+//         // position: absolute;
+//         // bottom: 80px;left: 20px;
+//         color: #000;
+//         .title{
+//             font-size: 30px;
+
+//             font-weight: 600;
+//         }
+//         .category{
+//             display: inline-block;
+//             margin-left: 10px;
+//             font-style: normal;
+//             font-weight: 600;
+//         }
+//     }
+
+//     .btn-box{
+//         // position: absolute;
+//         // bottom: 12px;left: 15px;
+//         padding-top: 15px;
+//         font-size: 20px;
+//         display: flex;
+//         color: #000;
+//         text-align: center;
+//         line-height: 43px;
+        
+//         .btn-link{
+//             display: block;
+//             width: 150px;height: 43px;
+//             font-weight: 600;
+//             border: 1px solid #000;
+//             border-radius: 100px;
+//             background: #fff;
+//             transition: .5s;
+//             &+.btn-link{
+//                 margin-left: 10px;
+//             }
+//             &:hover{
+//                 color: #fff;
+//                 background: #000;
+//             }
+//         }
+//         .link-site{
+//             width: 100px;
+//         }
+//     }
+
+// }
 
 .sc-contact{
     position: relative;

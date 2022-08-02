@@ -427,14 +427,24 @@ body {
   transition: 0.5s;
 }
 
-.sc-work {
+.innerWork {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
+}
+.innerWork .sc-work {
   position: relative;
   height: 100vh;
+  background: #fff;
 }
-.sc-work .work-area {
+.innerWork .sc-work .work-area {
   height: 100%;
 }
-.sc-work .sc-title {
+.innerWork .sc-work .sc-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,28 +452,28 @@ body {
   font-weight: 300;
   font-size: 20vw;
 }
-.sc-work .work-list {
+.innerWork .sc-work .work-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-.sc-work .work-item.work-item {
+.innerWork .sc-work .work-item.work-item {
   padding-top: 20vh;
 }
-.sc-work .work-item.andar {
+.innerWork .sc-work .work-item.andar {
   padding-left: 64vw;
 }
-.sc-work .work-item.naverCareer {
+.innerWork .sc-work .work-item.naverCareer {
   padding-left: 20vw;
 }
-.sc-work .work-item.primeX {
+.innerWork .sc-work .work-item.primeX {
   padding-left: 58vw;
 }
-.sc-work .work-item.kakaoMo {
+.innerWork .sc-work .work-item.kakaoMo {
   padding-left: 50vw;
 }
-.sc-work .link-work {
+.innerWork .sc-work .link-work {
   display: block;
   position: relative;
   width: 25vw;
@@ -472,13 +482,13 @@ body {
   overflow: hidden;
   transition: 0.3s;
 }
-.sc-work .link-work:hover img {
+.innerWork .sc-work .link-work:hover img {
   transform: scale(1.1);
 }
-.sc-work .link-work:hover::after {
+.innerWork .sc-work .link-work:hover::after {
   background: none;
 }
-.sc-work .link-work::after {
+.innerWork .sc-work .link-work::after {
   content: "";
   position: absolute;
   top: 0;
@@ -488,7 +498,7 @@ body {
   background: rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
-.sc-work .link-work img {
+.innerWork .sc-work .link-work img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -502,26 +512,26 @@ body {
      object-position: 50% 50%;
   transition: 0.3s ease-in-out;
 }
-.sc-work .link-work .img-naverShop {
+.innerWork .sc-work .link-work .img-naverShop {
   -o-object-position: 47% 50%;
      object-position: 47% 50%;
 }
-.sc-work .txt-box {
+.innerWork .sc-work .txt-box {
   padding-top: 20px;
   font-size: 15px;
   color: #000;
 }
-.sc-work .txt-box .title {
+.innerWork .sc-work .txt-box .title {
   font-size: 30px;
   font-weight: 600;
 }
-.sc-work .txt-box .category {
+.innerWork .sc-work .txt-box .category {
   display: inline-block;
   margin-left: 10px;
   font-style: normal;
   font-weight: 600;
 }
-.sc-work .btn-box {
+.innerWork .sc-work .btn-box {
   padding-top: 15px;
   font-size: 20px;
   display: flex;
@@ -529,7 +539,7 @@ body {
   text-align: center;
   line-height: 43px;
 }
-.sc-work .btn-box .btn-link {
+.innerWork .sc-work .btn-box .btn-link {
   display: block;
   width: 150px;
   height: 43px;
@@ -539,14 +549,14 @@ body {
   background: #fff;
   transition: 0.5s;
 }
-.sc-work .btn-box .btn-link + .btn-link {
+.innerWork .sc-work .btn-box .btn-link + .btn-link {
   margin-left: 10px;
 }
-.sc-work .btn-box .btn-link:hover {
+.innerWork .sc-work .btn-box .btn-link:hover {
   color: #fff;
   background: #000;
 }
-.sc-work .btn-box .link-site {
+.innerWork .sc-work .btn-box .link-site {
   width: 100px;
 }
 
