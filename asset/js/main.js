@@ -4,8 +4,16 @@ $(function(){
     //시작 블라인드 sc-visual 동적 구현
     bl = gsap.timeline()
     .addLabel('bld')
-    .to('.top-blind',{xPercent: -100,duration: 1.2,delay:.8}, 'bld')
-    .to('.btm-blind',{xPercent: 100,duration: 1.2,delay:.8}, 'bld')
+    // .fromTo('.lodingText1',{opacity: 1,},{opacity:0, duration: .7})
+    .from('.lodingText1',{opacity:0,delay:1, duration: .5})
+    .to('.lodingText1',{opacity:0, duration: .5})
+    .from('.lodingText2',{opacity:0, duration: .5})
+    .to('.lodingText2',{opacity:0, duration: .5})
+    // .fromTo('.lodingText2',{opacity: 0,},{opacity:1, duration: .7})
+    // .to('.lodingText2',{opacity: 0,duration: 1.2})
+    
+    .to('.top-blind',{xPercent: -100,duration: 1.2,delay:3.5}, 'bld')
+    .to('.btm-blind',{xPercent: 100,duration: 1.2,delay:3.5}, 'bld')
     
     .fromTo('.sc-visual .top', {xPercent:200 ,duration: 1,},{xPercent:-20, duration: 1},'=-.6')
     .to('.sc-visual .top',{xPercent: 0})
