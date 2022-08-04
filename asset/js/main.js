@@ -6,9 +6,9 @@ $(function(){
     .addLabel('bld')
     // .fromTo('.lodingText1',{opacity: 1,},{opacity:0, duration: .7})
     .from('.lodingText1',{opacity:0,delay:1, duration: .5})
-    .to('.lodingText1',{opacity:0, duration: .5})
+    .to('.lodingText1',{opacity:0, duration: .5, display:"none"})
     .from('.lodingText2',{opacity:0, duration: .5})
-    .to('.lodingText2',{opacity:0, duration: .5})
+    .to('.lodingText2',{opacity:0, duration: .5, display:"none"})
     // .fromTo('.lodingText2',{opacity: 0,},{opacity:1, duration: .7})
     // .to('.lodingText2',{opacity: 0,duration: 1.2})
     

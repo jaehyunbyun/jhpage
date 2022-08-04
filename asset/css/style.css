@@ -289,7 +289,7 @@ body {
   text-align: center;
   font-size: 10vw;
   color: #fff;
-  z-index: 50;
+  z-index: 30;
   text-transform: uppercase;
   letter-spacing: 0.25%;
   font-weight: 700;
@@ -303,7 +303,7 @@ body {
   text-align: center;
   font-size: 10vw;
   color: #fff;
-  z-index: 50;
+  z-index: 30;
   text-transform: uppercase;
   letter-spacing: 0.25%;
   font-weight: 700;
@@ -356,8 +356,8 @@ body {
 .sc-visual .sc-title .btm {
   position: relative;
   white-space: nowrap;
-  margin-left: 227px;
-  letter-spacing: -10px;
+  margin-left: 10vw;
+  letter-spacing: -0.025em;
 }
 .sc-visual .sc-title .btm .btm-line {
   position: absolute;
